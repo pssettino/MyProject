@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/pages/base/baseLayout.jsp">
+        <put-attribute name="header" value="/pages/base/header.jsp"/>
+        <put-attribute name="menu" value="/pages/base/menu.jsp"/>
+        <put-attribute name="filter" value=""/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/pages/base/footer.jsp"/>
+    </definition>
+
+    <definition name="home" extends="base.definition">
+        <put-attribute name="body" value="/pages/base/home.jsp"/>
+    </definition>
+
+    <definition name="clientes" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/clientes.jsp"/>
+    </definition>
+
+    <definition name="proveedores" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/proveedores.jsp"/>
+    </definition>
+    <definition name="productos" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/productos.jsp"/>
+    </definition>
+    <definition name="stock" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/stock.jsp"/>
+    </definition>
+    <definition name="pedidos" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/pedidos.jsp"/>
+    </definition>
+    <definition name="ordenesDeCompra" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/ordenesDeCompra.jsp"/>
+    </definition>
+    <definition name="fichaReparto" extends="base.definition">
+        <put-attribute name="body" value="/pages/pages/fichaReparto.jsp"/>
+    </definition>
+    <definition name="login" template="/pages/base/login.jsp">
+    </definition>
+
+    <definition name="logout" template="/pages/base/login.jsp">
+    </definition>
+
+
+    <definition name="400" template="/pages/error/400.jsp">
+    </definition>
+</tiles-definitions>

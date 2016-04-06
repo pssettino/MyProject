@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: R28.2.7-7-155314-1.6.0_45-20130329-0646-windows-x86_64 (Or
+ acle Corporation)
+Built-By: pgsett
+Built-Date: 2016-abril-06, 04:01:58
+Implementation-Title: myproject-webapp
+Implementation-Version: 1.0-SNAPSHOT
+
