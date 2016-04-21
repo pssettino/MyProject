@@ -1,5 +1,6 @@
 package com.hgp.myproject.core.domain;
 
+import com.hgp.myproject.core.dto.CategoryDTO;
 import com.hgp.myproject.core.dto.ProductsDTO;
 
 import javax.persistence.*;
@@ -30,7 +31,12 @@ public class Products implements Serializable {
         this.id = productsDTO.getId();
         this.description = productsDTO.getDescription();
         this.prise = productsDTO.getPrise();
-        this.category = new Category(productsDTO.getCategory());
+        CategoryDTO catDTO = productsDTO.getCategory();
+        if (catDTO != null) {
+            this.category = new Category(productsDTO.getCategory());
+        } else {
+            this.category = new Category();
+        }
     }
 
     public Long getId() {
