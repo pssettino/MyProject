@@ -131,7 +131,7 @@
                                     <select class="form-control" id="categoriaProducto"
                                             ng-model="product.category"
                                             ng-options="category.description for category in categories"
-                                            ng-init="product.category.id = category.id"
+                                            ng-selected="product.category.id === category.id"
                                     >
                                         <option value="">Seleccione una opcion...</option>
                                     </select>
